@@ -1,0 +1,80 @@
+.formato-btn {
+    @apply px-6 py-3 rounded-lg border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition-all duration-300 flex items-center gap-2 font-medium relative overflow-hidden;
+}
+
+.formato-btn.active {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg;
+    transform: translateY(-2px);
+}
+
+.formato-btn.active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-white transform scale-x-100 transition-transform duration-300;
+}
+
+.formato-btn:not(.active)::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-indigo-600 transform scale-x-0 transition-transform duration-300;
+}
+
+.formato-btn:not(.active):hover::after {
+    @apply scale-x-100;
+}
+
+.formato-btn i {
+    @apply text-xl;
+}
+
+.formato-btn .badge {
+    @apply absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full transform scale-0 transition-transform duration-300;
+    display: none;
+}
+
+.formato-btn.active .badge {
+    @apply scale-100;
+    display: block;
+}
+
+.mensagem {
+    @apply p-4 rounded-lg max-w-[80%];
+}
+
+.mensagem-usuario {
+    @apply bg-indigo-100 text-indigo-800 ml-auto;
+}
+
+.mensagem-bot {
+    @apply bg-gray-100 text-gray-800;
+}
+
+.mensagem-erro {
+    @apply bg-red-100 text-red-800;
+}
+
+/* Animação de digitação */
+.typing {
+    @apply inline-block;
+    animation: typing 1s steps(3, end);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Scrollbar personalizada */
+#chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-container::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-full;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    @apply bg-indigo-400 rounded-full;
+}
+
+#chat-container::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-600;
+} 
