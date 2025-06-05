@@ -2,6 +2,8 @@
 
 Este projeto é um chatbot inteligente que combina uma base de conhecimento do Notion com processamento de linguagem natural e geração de texto usando IA local. O sistema permite respostas personalizadas em diferentes formatos (WhatsApp e Email) baseadas em uma FAQ estruturada.
 
+> 💡 Este projeto foi inspirado no vídeo ["Como criar um ChatBot com Notion e IA Local"](https://www.youtube.com/watch?v=rOjusRRO1EI) da Asimov Academy.
+
 ## ✨ Funcionalidades
 
 - 💬 Interface web moderna e responsiva
@@ -131,6 +133,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 🙏 Agradecimentos
 
+- [Asimov Academy](https://www.youtube.com/@AsimovAcademy) pelo vídeo inspirador ["Como criar um ChatBot com Notion e IA Local"](https://www.youtube.com/watch?v=rOjusRRO1EI)
 - [Notion API](https://developers.notion.com/)
 - [Ollama](https://ollama.ai/)
 - [Tailwind CSS](https://tailwindcss.com/)
